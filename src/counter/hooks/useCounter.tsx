@@ -6,11 +6,11 @@ export const useCounter = (initialValue: number = 10) => {
     const handleAdd = () => {
         setCounter(counter+1);
     };
-    const handleSubstract = () => {
+    const handleSubtract = () => {
         setCounter((prevState) => prevState-1);
     };
     const handleReset = () => {
-        setCounter(5);
+        setCounter(10);
     };
 
     return {
@@ -18,7 +18,7 @@ export const useCounter = (initialValue: number = 10) => {
         counter,
         // Methoods / Actions
         handleAdd,
-        handleSubstract,
+        handleSubtract,
         handleReset
     }
 }
