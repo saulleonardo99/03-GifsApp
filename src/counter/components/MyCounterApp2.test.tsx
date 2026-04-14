@@ -17,8 +17,6 @@ vi.mock('../hooks/useCounter', () => ({
 describe('MyCounterApp', () => {
     test('shoulder render the component', () => {
         render(<MyCounterApp></MyCounterApp>);
-        screen.debug();
-
         expect(screen.getByRole('heading', {level: 1}).innerHTML).toContain(
             'counter: 40'
         );
