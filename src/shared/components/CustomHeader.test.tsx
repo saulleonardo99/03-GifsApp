@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 import { CustomHeader } from "./CustomHeader";
 
-describe('CutstomHeader', () => {
+describe('CustomHeader', () => {
     const title = 'titulo de prueba';
     test('should render the title correctly', () => {
         //! Arrange
